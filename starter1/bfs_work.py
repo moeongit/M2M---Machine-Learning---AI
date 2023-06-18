@@ -40,15 +40,14 @@ def bfs_target(source: Node, target: Node):
 
 
 
-graph = Graph('bfs-graph.txt', undirected = False)
+graph = Graph('graph2.txt', undirected = False)
 nodes = graph.nodes
 
-path = bfs(nodes['0'])
-target = bfs_target(nodes['0'], nodes['6'])
+path = bfs(nodes['1'])
+# target = bfs_target(nodes['0'], nodes['6'])
 
+
+# print(target)
 graph.draw_graph()
-
-print(target)
-
 graph.draw_path(path, draw_lines=False)
 turtle.done()
