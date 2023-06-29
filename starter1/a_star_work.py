@@ -49,7 +49,7 @@ if __name__ == "__main__":
     nodes = graph.nodes
 
     h = graph.calc_distance
-    path = a_star(nodes["2"], nodes["10"], h)
+    path = a_star(nodes["1"], nodes["7"], h)
 
     graph.draw_graph()
     graph.draw_path(path)
